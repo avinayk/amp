@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "TWKEverett-Regular";
+  src: url("../fonts/TWKEverett-Regular-web.woff") format("woff"), url("../fonts/TWKEverett-Regular-web.woff2") format("woff2"), url("../fonts/TWKEverett-Regular-web.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TWKEverett-Bold-web";
+  src: url("../fonts/TWKEverett-Bold-web.woff") format("woff"), url("../fonts/TWKEverett-Bold-web.woff2") format("woff2"), url("../fonts/TWKEverett-Bold-web.ttf") format("truetype");
+}
+/********placeHolder********/
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  scroll-behavior: smooth;
+  font-family: "TWKEverett-Regular" !important;
+}
+
+.gapbox * {
+  font-family: "TWKEverett-Regular" !important;
+}
+
+.containerblock {
+  width: 1670px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media only screen and (max-width: 1792px) {
+  .containerblock {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .containerblock {
+    width: 100%;
+  }
+}
+
+.herobg {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+@media only screen and (max-width: 767.98px) {
+  .header {
+    top: 20px;
+  }
+}
+.header .rightnav {
+  gap: 35px;
+}
+.header .rightnav a, .header .rightnav button {
+  color: #fff;
+  background: none;
+  border: none;
+  font-size: 18px;
+}
+@media only screen and (max-width: 991.98px) {
+  .header .rightnav a, .header .rightnav button {
+    font-size: 14px;
+  }
+}
+
+.bottombox {
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: 22;
+}
+@media only screen and (max-width: 991.98px) {
+  .bottombox {
+    text-align: center;
+  }
+}
+.bottombox h2 {
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.bottombox h3 {
+  color: #fff;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 66px;
+}
+@media only screen and (max-width: 991.98px) {
+  .bottombox h3 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .bottombox h3 br {
+    display: none;
+  }
+}
+
+.modal,
+.popup {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.modal .modal-content,
+.popup .modal-content {
+  background: #000;
+  border: 1px solid #202020;
+}
+.modal .modal-content .btn-close,
+.popup .modal-content .btn-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: #1a1a1a;
+  opacity: 1;
+  z-index: 33;
+  color: #fff;
+  border-radius: 100px !important;
+  width: 30px;
+  height: 30px;
+}
+.modal .modal-content .gapbox,
+.popup .modal-content .gapbox {
+  padding: 60px 20px;
+}
+.modal .modal-content .gapbox h1,
+.popup .modal-content .gapbox h1 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+}
+.modal .modal-content .gapbox p,
+.popup .modal-content .gapbox p {
+  color: #787878;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.pabtn button {
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+  font-weight: 800;
+  border-radius: 100px !important;
+  padding: 10px 30px;
+  border: none;
+}
+
+.needsclick.go2575657437.kl-private-reset-css-Xuajs1:hover {
+  border: none !important;
+}
+
+#downshift-0-menu {
+  background: #333 !important;
+}
+
+#email_113594054, #first_name_113594058, #last_name_113594059, #zip_code_113594061, #phone_number_113594060 {
+  width: 100% !important;
+  padding: 6px 10px !important;
+  color: #fff !important;
+  background: #000 !important;
+  border-top: none !important;
+  border-right: none !important;
+  border-left: none !important;
+  border-bottom: 1px solid #787878 !important;
+}
+
+.needsclick.go3894874857.kl-private-reset-css-Xuajs1 {
+  background: #fff !important;
+  color: #000 !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  border-radius: 100px !important;
+  padding: 16px 40px !important;
+  border: none !important;
+  height: auto !important;
+}
+
+.abouttext h2 {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 500;
+}
+.abouttext p {
+  color: #fff !important;
+  font-size: 16px;
+  font-weight: 300;
+}/*# sourceMappingURL=main.css.map */

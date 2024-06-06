@@ -1,0 +1,178 @@
+@import "variables";
+@import "mixin";
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $black;
+  // text-wrap: balance;
+  scroll-behavior: smooth;
+  font-family: $mainFont !important;
+}
+.gapbox *{
+  font-family: $mainFont !important;
+}
+.containerblock {
+  width: 1670px;
+  margin: 0 auto;
+  padding: 0 15px;
+  @include cw(1792px) {
+    width: 90%;
+  }
+  @include sm{
+    width: 100%;
+  }
+}
+.herobg {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+.header {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  @include sm{
+    top: 20px;
+  }
+  .rightnav {
+    gap: 35px;
+    a, button {
+      color: $white;
+      background: none;
+      border: none;
+      font-size: 18px;
+      @include md{
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.bottombox {
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: 22;
+  @include md {
+    text-align: center;
+  }
+  h2 {
+    font-size: 14px;
+    color: $white;
+    text-transform: uppercase;
+  }
+  h3 {
+    color: $white;
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 66px;
+    @include md {
+      font-size: 32px; 
+      line-height: 32px;
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+.modal,
+.popup {
+  backdrop-filter: blur(10px);
+  .modal-content {
+    background: #000;
+    border: 1px solid #202020;
+    .btn-close {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      background: #1a1a1a;
+      opacity: 1;
+      z-index: 33;
+      color: $white;
+      @include br(100px);
+      width: 30px;
+      height: 30px;
+    }
+    .gapbox {
+      padding: 60px 20px;
+      h1 {
+        color: $white;
+        font-size: 30px;
+        font-weight: 500;
+      }
+      p {
+        color: #787878;
+        font-size: 16px;
+        font-weight: 300;
+      }
+      // input[type="email"] {
+      //   width: 100%;
+      //   padding: 6px 10px;
+      //   color: $white;
+      //   background: #000;
+      //   border-top: none;
+      //   border-right: none;
+      //   border-left: none;
+      //   border-bottom: 1px solid #787878;
+      // }
+
+    }
+  }
+}
+.pabtn {
+  button{
+    background: $white;
+    color: $black;
+    font-size: 14px;
+    font-weight: 800;
+    @include br(100px); 
+    padding: 10px 30px;
+    border: none;
+  }
+}
+.needsclick.go2575657437.kl-private-reset-css-Xuajs1:hover {
+	border: none !important;
+}
+#downshift-0-menu {
+	background: #333 !important;
+}
+#email_113594054, #first_name_113594058, #last_name_113594059, #zip_code_113594061, #phone_number_113594060{
+  width: 100% !important;
+  padding: 6px 10px !important;
+  color: $white !important; 
+  background: #000 !important;
+  border-top: none !important;
+  border-right: none !important;
+  border-left: none !important;
+  border-bottom: 1px solid #787878 !important; 
+}
+.needsclick.go3894874857.kl-private-reset-css-Xuajs1 {
+  background: $white !important;
+  color: $black !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  @include br(100px); 
+  padding: 16px 40px !important;
+  border: none !important;
+  height: auto !important;
+}
+.abouttext {
+  h2 {
+    color: $white;
+    font-size: 35px;
+    font-weight: 500;
+  }
+  p {
+    color: $white !important;
+    font-size: 16px;
+    font-weight: 300;
+  }
+}

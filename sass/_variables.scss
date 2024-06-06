@@ -1,0 +1,53 @@
+$primary: #7c4275;
+$secondary: #5d0e03;
+$white: #fff;
+$black: #000;
+$mainFont: 'TWKEverett-Regular';
+
+
+@font-face {
+  font-family: 'TWKEverett-Regular';
+  src: url('../fonts/TWKEverett-Regular-web.woff') format('woff'),
+      url('../fonts/TWKEverett-Regular-web.woff2') format('woff2'),
+      url('../fonts/TWKEverett-Regular-web.ttf') format('truetype'),
+}
+@font-face {
+  font-family: 'TWKEverett-Bold-web';
+  src: url('../fonts/TWKEverett-Bold-web.woff') format('woff'),
+      url('../fonts/TWKEverett-Bold-web.woff2') format('woff2'),
+      url('../fonts/TWKEverett-Bold-web.ttf') format('truetype'),
+}
+
+
+
+//! media queries
+@mixin xl {
+  @media only screen and (max-width: 1399.98px) {
+    @content;
+  }
+}
+@mixin lg {
+  @media only screen and (max-width: 1199.98px) {
+    @content;
+  }
+}
+@mixin md {
+  @media only screen and (max-width: 991.98px) {
+    @content;
+  }
+}
+@mixin sm {
+  @media only screen and (max-width: 767.98px) {
+    @content;
+  }
+}
+@mixin xs {
+  @media only screen and (max-width: 575.98px) {
+    @content;
+  }
+}
+@mixin cw($value) {
+  @media only screen and (max-width: $value) {
+    @content;
+  }
+}

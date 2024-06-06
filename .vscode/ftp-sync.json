@@ -1,8 +1,8 @@
 {
-    "remotePath": "./public_html/html/amp",
-    "host": "ftp.itsugestion.com",
-    "username": "avinay@itsugestion.com",
-    "password": "*4=#.HR%c*NW",
+    "remotePath": "",
+    "host": "",
+    "username": "",
+    "password": "",
     "port": 21,
     "secure": false,
     "protocol": "ftp",
